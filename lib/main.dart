@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:todo/core/colors.dart';
+import 'package:todo/core/fonts.dart';
+import 'package:todo/features/homescreen/presentation/screens/screen_home.dart';
+import 'package:todo/features/splashscreen/presentation/screens/screen_splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme:ThemeData(
+      theme: ThemeData(
         primaryColor: AppColors.primary,
         scaffoldBackgroundColor: AppColors.surface,
         colorScheme: const ColorScheme.dark(
@@ -20,12 +24,14 @@ class MyApp extends StatelessWidget {
           surface: AppColors.surface,
           onSurface: AppColors.onSurface,
         ),
-         textTheme: const TextTheme(
-          bodyLarge: TextStyle(color: AppColors.onSurface),
-          bodyMedium: TextStyle(color: AppColors.onSurface),
+        textTheme: const TextTheme(
+          bodyLarge:
+              TextStyle(color: AppColors.onSurface, fontFamily: Fonts.mainfont),
+          bodyMedium:
+              TextStyle(color: AppColors.onSurface, fontFamily: Fonts.mainfont),
         ),
-    
-    ));
+      ),
+      home: const ScreenHome(),
+    );
   }
 }
-
