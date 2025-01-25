@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:todo/core/colors.dart';
 import 'package:todo/core/fonts.dart';
 import 'package:todo/features/homescreen/presentation/screens/screen_home.dart';
-import 'package:todo/features/splashscreen/presentation/screens/screen_splash.dart';
 
 void main() {
   runApp(const MyApp());

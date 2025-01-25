@@ -12,14 +12,14 @@ class QuoteTextWidget extends StatelessWidget {
     final screenSize = ScreenSize(context);
 
     return Container(
-      margin: EdgeInsets.all(5),
+      margin: const EdgeInsets.all(5),
       decoration: BoxDecoration(
           border: Border.all(color: Colors.white),
           borderRadius: BorderRadius.circular(20)),
       height: screenSize.height / 4,
       width: double.infinity,
       // color: AppColors.onSurface,
-      child: Center(
+      child: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

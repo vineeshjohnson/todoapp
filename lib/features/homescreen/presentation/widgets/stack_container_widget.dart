@@ -10,13 +10,8 @@ class StackContainerWidget extends StatelessWidget {
       height: 200,
       width: double.infinity,
       color: Colors.black,
-      child: Stack(
-        children: [
-          Positioned(
-            child: SearchbarWidget(),
-            top: 20,
-          )
-        ],
+      child: Center(
+        child: SearchbarWidget(),
       ),
     );
   }
