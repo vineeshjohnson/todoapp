@@ -6,9 +6,9 @@ class MinititlesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(18.0),
-      child: const Row(
+    return const Padding(
+      padding: EdgeInsets.all(18.0),
+      child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           SubtitleWidget(

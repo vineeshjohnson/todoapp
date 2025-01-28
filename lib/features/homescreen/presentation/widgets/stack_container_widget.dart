@@ -10,7 +10,7 @@ class StackContainerWidget extends StatelessWidget {
       height: 200,
       width: double.infinity,
       color: Colors.black,
-      child: Center(
+      child: const Center(
         child: SearchbarWidget(),
       ),
     );

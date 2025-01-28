@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/colors.dart';
 import '../../../../core/fonts.dart';
 import '../../../../core/utilities/mediaquery_class.dart';
 
