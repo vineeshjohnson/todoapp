@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 import '../../../../core/colors.dart';
 
 class SearchButton extends StatelessWidget {
-  const SearchButton({super.key});
-
+  const SearchButton({super.key,required this.onpress});
+final  VoidCallback onpress;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 52,
       width: 100,
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed:onpress,
         style: ButtonStyle(
             shape: WidgetStateProperty.all(
               RoundedRectangleBorder(
@@ -23,7 +23,7 @@ class SearchButton extends StatelessWidget {
         child: const Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-             Text(
+            Text(
               'Add',
               style: TextStyle(color: Colors.white),
             ),

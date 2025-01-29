@@ -2,8 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:todo/core/colors.dart';
 import 'package:todo/core/fonts.dart';
-import 'package:todo/features/add_todo/presentation/screens/add_todo_screen.dart';
-import 'package:todo/features/homescreen/presentation/screens/screen_home.dart';
+import 'package:todo/features/splashscreen/presentation/screens/screen_splash.dart';
 import 'package:todo/firebase_options.dart';
 
 void main() async {
@@ -37,7 +36,7 @@ class MyApp extends StatelessWidget {
               TextStyle(color: AppColors.onSurface, fontFamily: Fonts.mainfont),
         ),
       ),
-      home: const AddTodoScreen(),
+      home: const SplashScreen(),
     );
   }
 }

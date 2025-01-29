@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class TodoModel {
-  final String id; // Document ID from Firestore
+  String? id; // Document ID from Firestore
   final String title; // Title of the todo
   final String content; // Content/description of the todo
   final String deadline; // Deadline for the todo
@@ -11,7 +11,7 @@ class TodoModel {
 
   // Constructor
   TodoModel({
-    required this.id,
+    this.id,
     required this.title,
     required this.content,
     required this.deadline,
