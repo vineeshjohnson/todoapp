@@ -1,16 +1,70 @@
-# todo
+To-Do List App
 
-A new Flutter project.
+Overview
 
-## Getting Started
+This is a simple To-Do List app built using Flutter and Firebase Firestore. The app allows users to manage their tasks efficiently by adding, editing, deleting, and marking them as complete or pending.
 
-This project is a starting point for a Flutter application.
+Features
 
-A few resources to get you started if this is your first Flutter project:
+Task List: Displays tasks fetched from Firestore with attributes like title, description, due date, and completion status.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Add Task: Allows users to add new tasks to the list and store them in Firestore.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Edit Task: Users can modify the task title, description, and due date.
+
+Delete Task: Users can remove tasks from the list.
+
+Task Completion: Users can mark tasks as completed or revert completed tasks to pending.
+
+Tech Stack
+
+Flutter: For building the cross-platform mobile application.
+
+Firebase Firestore: For storing and retrieving tasks.
+
+Provider/Bloc (if used): For state management.
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/vineeshjohnson/todoapp
+
+Navigate to the project directory:
+
+cd todo-list-app
+
+Install dependencies:
+
+flutter pub get
+
+Run the app:
+
+flutter run
+
+Screenshots
+
+Include screenshots of the app to demonstrate its functionality.
+
+APK Download
+
+If available, you can download the APK from here (provide the actual link).
+
+Video Demonstration
+
+Watch a functional demo of the app here (provide the actual link).
+
+Repository Guidelines
+
+Keep the commit history clean and structured.
+
+Follow best practices in Flutter development.
+
+Contributions and improvements are welcome.
+
+License
+
+This project is for assessment purposes. If required, add an appropriate license.
+
+For any queries, feel free to contact me.
+
